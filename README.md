@@ -8,7 +8,7 @@ A significant portion of the problems in this repository are solved using two ma
 
 **SQL:** Many challenges involving data manipulation, querying, and analysis are solved using SQL queries.
 
-**Python (with Pandas and NumPy):** Python scripts, often leveraging libraries like Pandas and NumPy, are employed to solve problems related to data manipulation, analysis, and algorithmic tasks. This highlights my proficiency in programming with Python and utilizing relevant libraries for efficient problem-solving.
+**Python:** Python scripts, often leveraging libraries like Pandas and NumPy, are employed to solve problems related to data manipulation, analysis, and algorithmic tasks. This highlights my proficiency in programming with Python and utilizing relevant libraries for efficient problem-solving.
 
 # Continuous Improvement:
 It's important to note that coding skills are continually evolving. Some of the earlier problems in this repository might have solutions that I would approach more efficiently or differently now, as my skills have developed over time. The most recent problems are likely to be the best representation of my current skill level and problem-solving approach.
