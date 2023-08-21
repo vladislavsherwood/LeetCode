@@ -6,4 +6,4 @@ WHERE (
   Select Count(Distinct(Salary))
   From Employee as r
   where r.salary > e.salary
-  and r.DepartmentId = e.DepartmentId)<3
+  and r.DepartmentId = e.DepartmentId) < 3
