@@ -7,6 +7,7 @@ The problems are categorized into three folders based on their difficulty levels
 A significant portion of the problems in this repository are solved using two main approaches:
 
 **SQL:** Many challenges involving data manipulation, querying, and analysis are solved using SQL queries. This demonstrates my ability to work with relational databases and utilize SQL effectively.
+
 **Python (with Pandas and NumPy):** Python scripts, often leveraging libraries like Pandas and NumPy, are employed to solve problems related to data manipulation, analysis, and algorithmic tasks. This highlights my proficiency in programming with Python and utilizing relevant libraries for efficient problem-solving.
 
 # Continuous Improvement:
