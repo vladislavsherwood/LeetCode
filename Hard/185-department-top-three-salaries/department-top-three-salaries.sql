@@ -3,7 +3,7 @@ FROM Employee AS e
 INNER JOIN Department AS d
 ON d.id = e.departmentId
 WHERE (
-  Select Count(Distinct(Salary))
+  Select Count(Distinct Salary)
   From Employee as r
   where r.salary > e.salary
   and r.DepartmentId = e.DepartmentId) < 3
