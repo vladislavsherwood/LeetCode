@@ -7,4 +7,3 @@ Select request_at as Day, round(sum(case when status = "completed" then 0 else a
     Group by request_at, status) as a
   Group by Day
 Having day <= "2013-10-03" and day >= "2013-10-01"
-#123
