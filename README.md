@@ -6,5 +6,7 @@ The problems are categorized into three folders based on their difficulty levels
 # Folder Structure:
 
 **Easy:** This folder contains solutions to problems categorized as "Easy" difficulty on LeetCode.
+
 **Medium:** Here, you can find solutions to challenges of "Medium" difficulty.
+
 **Hard:** This folder includes solutions to the most challenging problems marked as "Hard" on LeetCode.
