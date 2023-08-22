@@ -1,6 +1,6 @@
 SELECT
     COUNT(DISTINCT customer_id) rich_count
 FROM
-    Store
+    Store s
 WHERE
     amount > 500
