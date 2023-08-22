@@ -1,12 +1,12 @@
 SELECT 
-    DATE_FORMAT(t1.trans_date, '%Y-%m') AS month, 
-    t1.country, 
-    COUNT(amount) AS trans_count, 
-    approved_count, 
-    SUM(amount) AS trans_total_amount, 
-    approved_total_amount
+  DATE_FORMAT(t1.trans_date, '%Y-%m') AS month, 
+  t1.country, 
+  COUNT(amount) AS trans_count, 
+  approved_count, 
+  SUM(amount) AS trans_total_amount, 
+  approved_total_amount
 FROM 
-    Transactions t1
+  Transactions t1
 INNER JOIN 
   (SELECT 
     DATE_FORMAT(trans_date, '%Y-%m') as month, 
