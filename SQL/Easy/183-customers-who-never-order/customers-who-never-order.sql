@@ -6,4 +6,4 @@ FROM
 LEFT JOIN 
     Orders o ON c.Id = o.customerId
 WHERE 
-    o.id is Null
+    o.id is NULL
