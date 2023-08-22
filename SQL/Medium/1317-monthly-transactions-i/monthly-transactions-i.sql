@@ -18,7 +18,7 @@ INNER JOIN
     CASE WHEN SUM(
         CASE WHEN state = 1 THEN 1 ELSE 0 END) > 0 
     THEN SUM(CASE WHEN state = 1 THEN amount ELSE 0 END)
-     ELSE 0 END AS approved_total_amount
+    ELSE 0 END AS approved_total_amount
   FROM 
     Transactions
   GROUP BY 
