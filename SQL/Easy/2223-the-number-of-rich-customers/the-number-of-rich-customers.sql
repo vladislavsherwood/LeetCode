@@ -1,5 +1,5 @@
 SELECT
-    COUNT(DISTINCT customer_id) as rich_count
+    COUNT(distinct customer_id) as rich_count
 FROM
     Store
 WHERE
