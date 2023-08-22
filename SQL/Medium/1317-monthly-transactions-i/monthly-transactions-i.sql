@@ -23,7 +23,7 @@ INNER JOIN
     Transactions
   GROUP BY 
     month, country) AS t2 ON t2.month = DATE_FORMAT(t1.trans_date, '%Y-%m') AND t1.country = t2.country
-GROUP BY month, t1.country;
+GROUP BY month, t1.country
 
 
 
