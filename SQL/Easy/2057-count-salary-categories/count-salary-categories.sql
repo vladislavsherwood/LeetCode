@@ -17,4 +17,4 @@ WHERE
 FROM 
     Accounts
 WHERE 
-    income > 50000)
+    income > 50000);
