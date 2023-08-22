@@ -12,4 +12,4 @@ WHERE
     FROM 
         Employee as r
     WHERE 
-        r.salary > e.salary AND r.DepartmentId = e.DepartmentId) < 3;
+        r.salary > e.salary AND r.DepartmentId = e.DepartmentId) < 3
