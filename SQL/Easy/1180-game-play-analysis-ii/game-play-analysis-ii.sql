@@ -5,7 +5,7 @@ FROM
 WHERE 
     (player_id, event_date) in
     (SELECT
-        player_id, MIN(event_date) as date
+        player_id, MIN(event_date)
     FROM
         Activity
     GROUP BY
