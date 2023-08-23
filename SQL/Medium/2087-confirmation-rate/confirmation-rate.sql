@@ -6,4 +6,4 @@ FROM
 RIGHT JOIN
     Signups s ON s.user_id= c.user_id
 GROUP BY
-    user_id
+    user_id;
