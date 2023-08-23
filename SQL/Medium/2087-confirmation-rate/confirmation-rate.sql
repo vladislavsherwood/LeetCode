@@ -1,16 +1,9 @@
 # Write your MySQL query statement below
 SELECT 
-    user_id, ROUND(AVG(CASE WHEN action = "confirmed" THEN 1 ELSE 0 END),2) AS confirmation_rate
+    s.user_id, ROUND(AVG(CASE WHEN c.action = "confirmed" THEN 1 ELSE 0 END),2) AS confirmation_rate
 FROM
-    Confirmations
+    Confirmations c
+RIGHT JOIN
+    Signups s ON s.user_id= c.user_id
 GROUP BY
     user_id
-
-    UNION
-
-SELECT
-    user_id, 0 AS confirmation_rate
-FROM
-    Signups
-WHERE
-    user_id not in (SELECT user_id FROM Confirmations)
