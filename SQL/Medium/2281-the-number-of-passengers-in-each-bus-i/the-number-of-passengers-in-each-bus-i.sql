@@ -14,5 +14,5 @@ RIGHT JOIN
 GROUP BY
     b.bus_id
 ORDER BY
-    b.bus_id
+    b.bus_id;
 
