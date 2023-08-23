@@ -4,8 +4,8 @@ FROM
     (SELECT 
         seat_id,
         free,
-        LAG(free,1) OVER (ORDER BY seat_id) as lag_seat,
-        LEAD(free,1) OVER (ORDER BY seat_id) as lead_seat
+        LAG(free,1) OVER (ORDER BY seat_id) AS lag_seat,
+        LEAD(free,1) OVER (ORDER BY seat_id) AS lead_seat
     FROM 
         Cinema) as c
 WHERE
