@@ -11,4 +11,4 @@ FROM
 WHERE
     free = 1 and (lag_seat = 1 or lead_seat = 1)
 ORDER BY
-    seat_id
+    seat_id;
