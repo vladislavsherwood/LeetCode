@@ -14,4 +14,4 @@ SELECT
 FROM 
     ids
 WHERE
-    value not IN (SELECT customer_id FROM Customers)
+    value not in (SELECT customer_id FROM Customers)
