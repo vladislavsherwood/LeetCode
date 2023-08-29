@@ -9,5 +9,5 @@ LEFT JOIN
     GROUP BY book_id) o ON b.book_id = o.book_id
 WHERE
     b.available_from <= '2019-05-23' 
-    AND (amount < 10 OR amount IS NULL)
+    AND (amount < 10 OR amount IS NULL);
 
