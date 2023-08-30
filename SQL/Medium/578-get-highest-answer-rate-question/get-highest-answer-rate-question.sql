@@ -14,4 +14,4 @@ FROM
         question_id) d
 ORDER BY
     rate DESC, question_id
-LIMIT 1;
+LIMIT 1
