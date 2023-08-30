@@ -9,4 +9,4 @@ WHERE
 GROUP BY
     a1.player_id, a1.event_date
 ORDER BY
-     a1.player_id, a1.event_date
+     a1.player_id
