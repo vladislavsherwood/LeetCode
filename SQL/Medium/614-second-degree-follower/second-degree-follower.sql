@@ -1,6 +1,6 @@
 SELECT 
   followee as follower, 
-  COUNT(follower) as num
+  COUNT(distinct follower) as num
 FROM 
   Follow
 WHERE   
