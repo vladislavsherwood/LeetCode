@@ -8,4 +8,4 @@ WHERE
 GROUP BY 
   followee
 ORDER BY 
-  followee
+  followee;
