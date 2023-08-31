@@ -1,6 +1,6 @@
 SELECT 
-  followee as follower, 
-  COUNT(distinct follower) as num
+  followee AS follower, 
+  COUNT(distinct follower) AS num
 FROM 
   Follow
 WHERE   
@@ -8,4 +8,4 @@ WHERE
 GROUP BY 
   followee
 ORDER BY 
-  followee;
+  followee
