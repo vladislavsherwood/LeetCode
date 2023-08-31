@@ -12,6 +12,6 @@ WHERE
             candidateId
         ORDER BY
             COUNT(id) desc
-        LIMIT 1)
+        LIMIT 1);
 
 
