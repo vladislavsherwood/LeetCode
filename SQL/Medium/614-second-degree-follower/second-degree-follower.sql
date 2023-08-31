@@ -6,6 +6,6 @@ FROM
 WHERE   
   followee in (SELECT follower FROM Follow)
 GROUP BY 
-  1
+  followee
 ORDER BY 
-  1
+  followee
