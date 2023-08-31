@@ -16,4 +16,4 @@ FROM
     GROUP BY
         business_id
     HAVING
-        count_above_avg > 1) as p
+        count_above_avg > 1) as p;
