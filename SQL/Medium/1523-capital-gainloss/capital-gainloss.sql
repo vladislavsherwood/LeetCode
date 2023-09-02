@@ -5,4 +5,4 @@ SELECT
 FROM 
     Stocks
 GROUP BY 
-    stock_name
+    stock_name;
