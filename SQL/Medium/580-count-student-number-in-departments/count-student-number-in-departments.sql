@@ -7,4 +7,4 @@ RIGHT JOIN
 GROUP BY
     d.dept_id
 ORDER BY
-    student_number DESC, dept_name
+    student_number DESC, dept_name;
