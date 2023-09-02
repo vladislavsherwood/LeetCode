@@ -60,5 +60,5 @@ SELECT
 FROM
     main
 ORDER BY
-    bus_id
+    bus_id;
 
