@@ -12,4 +12,4 @@ GROUP BY
     s1.day
 ORDER BY 
     s1.gender, 
-    s1.day;
+    s1.day
