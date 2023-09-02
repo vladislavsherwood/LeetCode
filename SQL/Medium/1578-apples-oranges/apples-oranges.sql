@@ -5,4 +5,4 @@ SELECT
 FROM
     Sales
 GROUP BY
-    sale_date
+    sale_date;
