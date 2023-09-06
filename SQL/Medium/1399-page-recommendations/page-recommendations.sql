@@ -8,4 +8,4 @@ WHERE user_id IN
 AND page_id NOT IN 
     (SELECT page_id
     FROM Likes
-    WHERE user_id = "1")
+    WHERE user_id = "1");
