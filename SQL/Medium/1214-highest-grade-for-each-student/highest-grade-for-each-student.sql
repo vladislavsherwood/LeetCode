@@ -5,4 +5,4 @@ WHERE (student_id, grade) in
   FROM Enrollments
   GROUP BY student_id)
 GROUP BY student_id
-ORDER BY student_id;
+ORDER BY student_id
