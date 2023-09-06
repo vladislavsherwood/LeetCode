@@ -36,4 +36,4 @@ RIGHT JOIN
 GROUP BY
     t.team_id
 ORDER BY
-    num_points DESC, team_id
+    num_points DESC, team_id;
