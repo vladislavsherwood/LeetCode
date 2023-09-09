@@ -1,3 +1,4 @@
+-- Calculating chargeback statistics for each month and country.
 WITH CTE AS 
     (SELECT
         LEFT(c.trans_date,7) month,
@@ -11,6 +12,7 @@ WITH CTE AS
     GROUP BY
         LEFT(c.trans_date,7), country),
 
+-- Calculating approved transaction statistics for each month and country.
 CTE2 as
     (SELECT 
         LEFT(trans_date,7) month,
@@ -22,6 +24,7 @@ CTE2 as
     GROUP BY
         LEFT(trans_date,7), country),
 
+-- Combining all unique months and countries from both Chargebacks and Transactions.
 AllMonths AS (
     SELECT 
         LEFT(trans_date, 7) AS month, country
@@ -34,6 +37,7 @@ AllMonths AS (
     JOIN Transactions t on id = trans_id 
 ),
 
+-- Listing all unique countries from the Transactions table.
 AllCountries as (
     SELECT 
         country
@@ -41,7 +45,7 @@ AllCountries as (
         Transactions
 )
 
-
+-- Combining the results from the CTEs to produce the final report.
 SELECT
     am.month,
     am.country,
@@ -59,4 +63,3 @@ WHERE
     approved_count <> 0 or chargeback_count <> 0
 ORDER BY
     am.month, CTE.country
-
