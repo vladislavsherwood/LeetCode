@@ -1,8 +1,8 @@
 SELECT
-    ROUND(AVG(am)*100,2) AS average_daily_percent
+    ROUND(AVG(am)*100,2) average_daily_percent
 FROM
     (SELECT
-        COUNT(DISTINCT r.post_id)/COUNT(DISTINCT a.post_id) AS am
+        COUNT(DISTINCT r.post_id)/COUNT(DISTINCT a.post_id) am
     FROM
         Actions a
     LEFT JOIN 
@@ -10,4 +10,4 @@ FROM
     WHERE
         extra = "spam"
     GROUP BY
-        action_date) AS n;
+        action_date) n
