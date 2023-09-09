@@ -35,15 +35,8 @@ AllMonths AS (
         LEFT(c.trans_date, 7) AS month, t.country
     FROM Chargebacks c
     JOIN Transactions t on id = trans_id 
-),
-
--- Listing all unique countries from the Transactions table.
-AllCountries as (
-    SELECT 
-        country
-    FROM
-        Transactions
 )
+
 
 -- Combining the results from the CTEs to produce the final report.
 SELECT
