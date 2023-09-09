@@ -10,4 +10,4 @@ FROM
     WHERE
         extra = "spam"
     GROUP BY
-        action_date) n
+        action_date) n;
