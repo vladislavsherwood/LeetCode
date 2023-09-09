@@ -8,4 +8,4 @@ FROM
     GROUP BY
         viewer_id, view_date
     HAVING
-        amount > 1) a
+        amount > 1) a;
