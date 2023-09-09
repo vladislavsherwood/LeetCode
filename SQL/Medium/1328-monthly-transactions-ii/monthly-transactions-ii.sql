@@ -58,5 +58,5 @@ LEFT JOIN
 WHERE
     approved_count <> 0 or chargeback_count <> 0
 ORDER BY
-    am.month, CTE.country;
+    am.month, CTE.country
 
