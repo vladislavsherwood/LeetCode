@@ -49,10 +49,10 @@ AllCountries as (
 SELECT
     am.month,
     am.country,
-    COALESCE(approved_count, 0) AS approved_count,
-    COALESCE(approved_amount, 0) AS approved_amount,
-    COALESCE(chargeback_count, 0) AS chargeback_count,
-    COALESCE(chargeback_amount, 0) AS chargeback_amount
+    COALESCE(approved_count, 0) approved_count,
+    COALESCE(approved_amount, 0) approved_amount,
+    COALESCE(chargeback_count, 0) chargeback_count,
+    COALESCE(chargeback_amount, 0) chargeback_amount
 FROM
     AllMonths am
 LEFT JOIN
