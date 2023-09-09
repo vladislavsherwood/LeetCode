@@ -27,7 +27,7 @@ CTE2 as
 -- Combining all unique months and countries from both Chargebacks and Transactions.
 AllMonths AS (
     SELECT 
-        LEFT(trans_date, 7) AS month, country
+        LEFT(trans_date, 7) month, country
     FROM 
         Transactions
     UNION
