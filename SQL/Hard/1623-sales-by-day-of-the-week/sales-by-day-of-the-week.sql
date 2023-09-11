@@ -14,4 +14,4 @@ RIGHT JOIN
 GROUP BY
     item_category
 ORDER BY
-    CATEGORY
+    CATEGORY;
