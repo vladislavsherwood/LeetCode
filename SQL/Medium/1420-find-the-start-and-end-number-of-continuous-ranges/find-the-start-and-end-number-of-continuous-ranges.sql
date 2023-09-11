@@ -6,4 +6,4 @@ FROM
     FROM
         Logs) n
 GROUP BY
-    grp;
+    grp
