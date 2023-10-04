@@ -19,4 +19,4 @@ FROM
 LEFT JOIN 
     paid_to pt on pt.user_id = u.user_id
 LEFT JOIN 
-    paid_by pb on pb.user_id = u.user_id
+    paid_by pb on pb.user_id = u.user_id;
