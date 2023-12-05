@@ -1,5 +1,6 @@
 func isAnagram(s string, t string) bool {
     hash := make(map[rune]int)
+    
     for _, letter := range s{
         hash[letter] += 1
     }
