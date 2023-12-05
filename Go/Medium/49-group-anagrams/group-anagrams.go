@@ -1,21 +1,9 @@
 func groupAnagrams(strs []string) [][]string {
+
     anagrams := make(map[string][]string)
-
-    var wg sync.WaitGroup
-    var mu sync.Mutex
-
     for _, str := range strs{
-        wg.Add(1)
-        go func(s string){
-            defer wg.Done()
-            sortedStr := sortString(str)
-            mu.Lock()
-            anagrams[sortedStr] = append(anagrams[sortedStr], str)
-            mu.Unlock()
-        }(str)
-        
-    wg.Wait()
-        
+        sortedStr := sortString(str)
+        anagrams[sortedStr] = append(anagrams[sortedStr], str)
     }
 
     result := make([][]string,0,len(anagrams))
@@ -24,6 +12,7 @@ func groupAnagrams(strs []string) [][]string {
     }
     return result
 }
+
 
 func sortString (s string) string{
     characters := strings.Split(s,"")
