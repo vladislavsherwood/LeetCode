@@ -4,6 +4,7 @@ func containsDuplicate(nums []int) bool {
         if hash[num]{
             return true
         }
+        
         hash[num] = true
     }
     return false
