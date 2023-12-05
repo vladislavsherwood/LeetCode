@@ -13,6 +13,7 @@ func groupAnagrams(strs []string) [][]string {
             anagrams[sortedStr] = append(anagrams[sortedStr], str)
             mu.Unlock()
         }(str)
+        
     wg.Wait()
         
     }
