@@ -3,7 +3,6 @@ func productExceptSelf(nums []int) []int {
 
   prefix := 1
   postfix := 1
-
   for i, num := range nums{
       res[i] = prefix
       prefix *= num
