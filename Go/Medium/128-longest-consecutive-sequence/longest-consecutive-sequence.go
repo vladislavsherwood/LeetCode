@@ -6,11 +6,12 @@ func longestConsecutive(nums []int) int {
     }
 
     res := 0
+    
     for _, n := range nums{
         if set[n-1]{
             continue
         }
-        
+
         consecutive := 1
         next := n + 1
 
