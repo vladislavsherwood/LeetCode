@@ -7,7 +7,6 @@ func isValidSudoku(board [][]byte) bool {
       column := j
 
       current_value := string(board[i][j])
-
       if current_value == "."{
         continue
       }
