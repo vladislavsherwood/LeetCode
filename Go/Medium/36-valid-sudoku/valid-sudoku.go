@@ -1,14 +1,13 @@
 func isValidSudoku(board [][]byte) bool {
 
   hashMap := make(map[string]bool)
-
   for i:=0; i<9; i++{
     for j:=0; j<9; j++{
       row := i
       column := j
 
       current_value := string(board[i][j])
-      
+
       if current_value == "."{
         continue
       }
