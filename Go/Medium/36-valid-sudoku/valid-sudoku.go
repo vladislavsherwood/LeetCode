@@ -18,7 +18,7 @@ func isValidSudoku(board [][]byte) bool {
 
       if check1 || check2 || check3{
         return false
-        
+
       } else{
         hashMap[(current_value + "row f" + string(row))] = true
         hashMap[(current_value + "column f" + string(column))] = true
@@ -26,5 +26,7 @@ func isValidSudoku(board [][]byte) bool {
       }
     }
   }
+
   return true
+  
 }
