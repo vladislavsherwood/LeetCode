@@ -10,13 +10,13 @@ func isValid(s string) bool {
     stack := make([]byte, 0)
     
     // Iterate through each character in the input string
-    for _, char := range []byte(s) {
+    for _, st := range []byte(s) {
         // Retrieve the corresponding open bracket for the current closed bracket
-        pair, ok := pairs[char]
+        pair, ok := pairs[st]
         
         // If the current character is an open bracket, push it onto the stack
         if !ok {
-            stack = append(stack, char)
+            stack = append(stack, st)
             continue
         }
     
