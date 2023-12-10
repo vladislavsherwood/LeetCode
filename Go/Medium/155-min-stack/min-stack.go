@@ -23,6 +23,7 @@ func (this *MinStack) Push(val int)  {
     } else {
         newtop = &StackNode{data: val, next: this.top, lastmin: this.min}
     }
+    
     this.top = newtop
     if this.top.data < this.min {
         this.min = this.top.data
